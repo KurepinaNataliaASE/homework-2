@@ -5,7 +5,7 @@ public class Main extends Transport {
     @Override
     public void start() {
         System.out.println("Bicycle " + model + " started.");
-        speed = 5;
+        speed = 8;
     }
 
     @Override
@@ -23,7 +23,6 @@ public class Main extends Transport {
         return null;
     }
 
-    // ... (реализация остальных методов)
 }
 //Car
 
@@ -62,7 +61,7 @@ public final class Bicycle extends Transport {
 
 }
 
-//Engine.javaTask _ name to clipboard
+//Engine.java
 public sealed class Engine permits Car.CarEngine {
     EngineType type;
     double power;
@@ -81,8 +80,8 @@ public enum EngineType {
 //Main.javaTask
 public class main {
     public static void main(String[] args) {
-        Car car = new Car("BMW", 2022, EngineType.DIESEL, 200);
-        Bicycle bicycle = new Bicycle("Trek", 2023);
+        Car car = new Car("Fiat", 2020, EngineType.DIESEL, 320);
+        Bicycle bicycle = new Bicycle("T", 2025);
 
         car.start();
         car.move();
